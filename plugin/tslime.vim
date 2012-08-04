@@ -7,7 +7,10 @@ if exists("g:tslime_loaded")
 endif
 
 let g:tslime_loaded = 1
-let g:tslime_send_prefix = ""
+
+if !exists("g:tslime_send_prefix")
+  let g:tslime_send_prefix = ""
+endif
 
 " Main function.
 " Use it in your script if you want to send text to a tmux session.
