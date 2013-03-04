@@ -66,7 +66,11 @@ endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nmap <C-c>v :call <SID>Tmux_Vars()<CR>
-vnoremap <silent> <C-c><C-c> "ry :call Send_to_Tmux(@r)<CR>
-nmap <C-c><C-c> vip<C-c><C-c>
+nmap <leader>tv :call <SID>Tmux_Vars()<CR>
+vnoremap <silent> <leader>tt "ry :call Send_to_Tmux(@r)<CR>
+nmap  <leader>tt vip<leader>tt
 nnoremap :tt :call To_Tmux()<CR>
+
+autocmd FileType r nmap <buffer> <leader>tr ^vt=<leader>tto<esc>V<leader>ttkddk
+autocmd FileType python nmap <buffer> <leader>tr ^vt=<leader>tto<esc>V<leader>ttkddk
+nmap <leader>tg ggvG<leader>tt
