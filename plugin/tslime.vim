@@ -69,8 +69,8 @@ endfunction
 nmap <leader>tv :call <SID>Tmux_Vars()<CR>
 vnoremap <silent> <leader>tt "ry :call Send_to_Tmux(@r)<CR>
 nmap  <leader>tt vip<leader>tt
-nnoremap :tt :call To_Tmux()<CR>
+nnoremap <leader>t<leader> :call To_Tmux()<CR>
 
-autocmd FileType r nmap <buffer> <leader>tr ^vt=<leader>tto<esc>V<leader>ttkddk
-autocmd FileType python nmap <buffer> <leader>tr ^vt=<leader>tto<esc>V<leader>ttkddk
+autocmd FileType r nmap <buffer> <leader>tr ^vt=<leader>tt<leader>t<leader><CR>
+autocmd FileType python nmap <buffer> <leader>tr ^vt=<leader>tt<leader>t<leader><CR>
 nmap <leader>tg ggvG<leader>tt
