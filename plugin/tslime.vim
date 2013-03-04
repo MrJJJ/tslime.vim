@@ -73,4 +73,4 @@ nnoremap <leader>t<leader> :call To_Tmux()<CR>
 
 autocmd FileType r nmap <buffer> <leader>tr ^vt=<leader>tt<leader>t<leader><CR>
 autocmd FileType python nmap <buffer> <leader>tr ^vt=<leader>tt<leader>t<leader><CR>
-nmap <leader>tg ggvG<leader>tt
+nmap <leader>tg ggvG<leader>tt<leader>t<leader><CR>
