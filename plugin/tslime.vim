@@ -67,8 +67,8 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 nmap <leader>tv :call <SID>Tmux_Vars()<CR>
-vnoremap <silent> <leader>tt "ry :call Send_to_Tmux(@r)<CR>
-nmap  <leader>tt vip<leader>tt
+vnoremap <silent> <CR> "ry :call Send_to_Tmux(@r)<CR>
+nmap <CR> V<CR>j
 
 nmap <leader>tg ggvG<leader>tt
 
