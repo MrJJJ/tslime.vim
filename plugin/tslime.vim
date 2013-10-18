@@ -67,8 +67,13 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 nmap <leader>tv :call <SID>Tmux_Vars()<CR>
-vnoremap <silent> <CR> "ry :call Send_to_Tmux(@r)<CR>
-nmap <CR> V<CR>j
+"vnoremap <silent> <CR> "ry :call Send_to_Tmux(@r)<CR>
+"nmap <CR> V<CR>
+
+nmap <silent> <CR> V"ry :call Send_to_Tmux(@r)<CR><down>
+let @w=''
+vnoremap <silent> <CR> :normal@w<CR>
+
 
 nmap <leader>tg ggvG<leader>tt
 
